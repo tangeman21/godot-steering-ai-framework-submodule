@@ -37,6 +37,8 @@ func _arrive(acceleration: GSAITargetAcceleration, target_position: Vector3) -> 
 
 		acceleration.linear = GSAIUtils.clampedv3(desired_velocity, agent.linear_acceleration_max)
 		acceleration.angular = 0
+	if acceleration.linear == Vector3.ZERO:
+		emit_signal("finished")
 
 
 func _calculate_steering(acceleration: GSAITargetAcceleration) -> void:

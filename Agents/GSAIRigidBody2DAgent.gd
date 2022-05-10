@@ -22,7 +22,7 @@ func _init(_body: RigidBody2D) -> void:
 
 # Moves the agent's `body` by target `acceleration`.
 # @tags - virtual
-func _apply_steering(acceleration: GSAITargetAcceleration, _delta: float) -> void:
+func _apply_steering(acceleration: GSAITargetAcceleration) -> void:
 	var _body: RigidBody2D = _body_ref.get_ref()
 	if not _body:
 		return
