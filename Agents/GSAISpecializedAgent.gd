@@ -35,5 +35,5 @@ var _applied_steering := false
 
 # Moves the agent's body by target `acceleration`.
 # @tags - virtual
-func _apply_steering(_acceleration: GSAITargetAcceleration) -> void:
+func _apply_steering(_acceleration: GSAITargetAcceleration, _delta: float) -> void:
 	pass

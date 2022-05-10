@@ -17,10 +17,6 @@ var angular_speed_max := 0.0
 # The maximum amount of angular acceleration that any behavior can apply to an
 # agent.
 var angular_acceleration_max := 0.0
-#Inertia of the agent, to get impulse needed for angular accelerations
-var inertia : float
-
-var mass : float
 # Current velocity of the agent.
 var linear_velocity := Vector3.ZERO
 # Current angular velocity of the agent.
